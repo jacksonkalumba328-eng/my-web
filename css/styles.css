@@ -1,0 +1,483 @@
+General page styling */
+
+* {
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f0f4f8;
+
+    color: #222;
+
+    line-height: 1.6;
+
+}
+
+/* Header */
+
+header {
+
+    background-color: #123456;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 15px;
+
+}
+
+header h1 {
+
+    font-size: 32px;
+
+    margin: 0;
+
+}
+
+/* Navigation */
+
+nav {
+
+    background-color: #087e8b;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    padding: 15px;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+}
+
+nav a:hover,
+
+nav a:focus {
+
+    background-color: #123456;
+
+    text-decoration: underline;
+
+}
+
+/* Main cont…
+
+/* Main content */
+
+main {
+
+    max-width: 1000px;
+
+    margin: 20px auto;
+
+    padding: 0 15px;
+
+}
+
+/* Repeated sections */
+
+.content-section {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    border: 1px solid #ccd5df;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 6px #00000012;
+
+}
+
+/* Unique section */
+
+#hobbies {
+
+    background-color: #edf8f7;
+
+}
+
+h2 {
+
+    color: #087e8b;
+
+    border-bottom: 2px solid #087e8b;
+
+    padding-bottom: 5px;
+
+}
+
+h3 {
+
+    color: #123456;
+
+}
+
+/* Photo gallery */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+
+        auto-fit, minmax(200px, 1fr)
+
+    );
+
+    gap: 20px;
+
+}
+
+figure {
+
+    margin: 0;
+
+    text-align: center;
+
+}
+
+.gallery img {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+}
+
+figcaption {
+
+    padding: 8px;
+
+    font-size: 14px;
+
+}
+
+/* Media */
+
+video,
+
+audio {
+
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 10px 0;
+
+}
+
+video {
+
+    width: 600px;
+
+    display: block;
+
+}
+
+/* Table */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin: 15px 0;
+
+}
+
+caption {
+
+    font-weight: bold;
+
+    padding: 10px;
+
+}
+
+th, td {
+
+    border: 1px solid #aab7c4;
+
+    padding: 10px;
+
+    text-align: left;
+
+}
+
+th {
+
+    background-color: #087e8b;
+
+    color: white;
+
+}
+
+/* Contact form */
+
+form {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+input, textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #aab7c4;
+
+    border-radius: 5px;
+
+    font: inherit;
+
+}
+
+button {
+
+    background-color: #087e8b;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+button:hover,
+
+button:focus {
+
+    background-color: #123456;
+
+}
+
+/* Footer */
+
+footer {
+
+    background-color: #123456;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    margin-top: 30px;
+
+}
+
+/* Small screens */
+
+@media (max-width: 600px) {
+
+    header h1 {
+
+        font-size: 25px;
+
+    }
+
+    nav {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+    .content-section {
+
+        padding: 15px;
+
+    }
+
+    table {
+
+        font-size: 13px;
+
+    }
+
+}#contact {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#contact button {
+    background-color: #12345a;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #245a8d;
+}
+
+#contact input:focus-visible,
+#contact textarea:focus-visible,
+#contact button:focus-visible {
+    outline: 2px solid orange;
+    outline-offset: 2px;
+}
+/* Dark theme for the website */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode footer {
+    background-color: #222222;
+    color: #ffffff;
+}
+
+body.dark-mode nav {
+    background-color: #181818;
+}
+
+body.dark-mode nav a {
+    color: #ffffff;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #777777;
+}
+
+#themeToggle {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    background-color: #2878d0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+}
+
+#backToTop:hover {
+    background-color: #15549a;
+}
+#dateTime {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #e8f0fe;
+    color: #222;
+    max-width: 400px;
+}
+
+#dateTime h2 {
+    margin-bottom: 15px;
+}
+
+#dateTime {
+    text-align: center;
+    background: linear-gradient(135deg, #dbeafe, #ffffff);
+    color: #1e3a8a;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 450px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#dateTime h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#dateTime p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#welcomeMessage {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 12px;
+    background-color: #e8f0fe;
+    color: #1e3a8a;
+}
+
+#welcomeMessage h2 {
+    font-size: 26px;
+}
